@@ -3,13 +3,13 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <servers>
     <server>
-      <username>${security.getCurrentUsername()}</username>
-      <password>${security.getEscapedEncryptedPassword()!"AP6aaY7jJ3emhuinJpiPWMVdEbp"}</password>
+      <username>deployer</username>
+      <password>Nani@civil2</password>
       <id>central</id>
     </server>
     <server>
       <username>${security.getCurrentUsername()}</username>
-      <password>${security.getEscapedEncryptedPassword()!"AP6aaY7jJ3emhuinJpiPWMVdEbp"}</password>
+      <password>${security.getEscapedEncryptedPassword()!"AP5mAobCARnjvzzqwseFDnwgzo4"}</password>
       <id>snapshots</id>
     </server>
   </servers>
@@ -18,33 +18,33 @@
       <repositories>
         <repository>
           <snapshots>
-            <enabled>false</enabled>
+            <enabled>true</enabled>
           </snapshots>
           <id>central</id>
           <name>libs-release</name>
-          <url>http://65.0.107.234:8081/artifactory/libs-release</url>
+          <url>http://54.175.224.124:8081/artifactory/libs-release</url>
         </repository>
         <repository>
           <snapshots />
           <id>snapshots</id>
           <name>libs-snapshot</name>
-          <url>http://65.0.107.234:8081/artifactory/libs-snapshot</url>
+          <url>http://54.175.224.124:8081/artifactory/libs-snapshot</url>
         </repository>
       </repositories>
       <pluginRepositories>
         <pluginRepository>
           <snapshots>
-            <enabled>false</enabled>
+            <enabled>true</enabled>
           </snapshots>
           <id>central</id>
           <name>libs-release</name>
-          <url>http://65.0.107.234:8081/artifactory/libs-release</url>
+          <url>http://54.175.224.124:8081/artifactory/libs-release-local</url>
         </pluginRepository>
         <pluginRepository>
           <snapshots />
           <id>snapshots</id>
           <name>libs-snapshot</name>
-          <url>http://65.0.107.234:8081/artifactory/libs-snapshot</url>
+          <url>http://54.175.224.124:8081/artifactory/libs-snapshot-local</url>
         </pluginRepository>
       </pluginRepositories>
       <id>artifactory</id>
